@@ -1,0 +1,360 @@
+@charset "utf-8"; 
+/*
+* Tribox Internet
+* @author: Tribox <comercial@tribox.com.br>
+* @author URL: http://tribox.com.br
+* @Version: 1.0.0
+* @Descrição: LandingPage Bia Faulin
+*/
+
+$container: 1260px;
+
+
+
+//
+// FRAMEWORK
+//
+*{
+	padding: 0;
+	margin: 0;
+	//box-sizing: border-box;
+    box-sizing: inherit;
+	font-family: 'Montserrat',sans-serif;
+	outline: none;
+}
+
+html{
+	font-size: 100%;
+	scroll-behavior: smooth;
+}
+
+
+body{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e4f8f7+12,c0ebf1+71 */
+	background: #e4f8f7; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #e4f8f7 12%, #c0ebf1 71%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #e4f8f7 12%,#c0ebf1 71%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #e4f8f7 12%,#c0ebf1 71%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f8f7', endColorstr='#c0ebf1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	font-weight: 400;
+	color: #303030;
+	padding: 10vh 0 0; // viewport height
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+	//border-bottom: 1px dotted $PrimaryColorHex;
+}
+
+
+
+.container {
+    max-width: $container;
+    padding: 0 5px;
+    margin: 0px auto;
+}
+/*CLEARFIX*/
+.container::before, .container::after {
+    content:"";
+    display:table;
+}
+.container::after {
+    clear:both;
+}
+.container {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+/*CLEARFIX*/
+
+.txtCt{ text-align: center !important;}
+.txtRt{ text-align: right !important;}
+.txtLt{ text-align: left !important;}
+.txtJt{ text-align: justify !important;}
+.txtUP{ text-transform: uppercase !important; }
+.fl { float: left;}
+.fr { float: right;}
+.bl { display: block;}
+.cls { clear: both;}
+.curp { cursor: pointer;}
+.noPd{ padding: 0px !important;}
+
+.only-mobile{ display: none !important; }
+.no-mobile{display: inherit !important;}
+
+
+@media screen and (max-width:991px) {
+
+	.txtCtT{ text-align: center !important;}
+	.no-mobile{
+		display: none !important;
+	}
+	.only-mobile{
+		display: block !important;
+	}
+	
+}
+@media screen and (max-width:767px) {
+
+	.txtRtM{ text-align: right !important;}
+	.txtCtM{ text-align: center !important;}
+	.no-mobile{
+		display: none !important;
+	}
+	.only-mobile{
+		display: block !important;
+	}
+	
+}
+
+
+
+//
+// IMPORTS
+//
+@import "../_vendor/fomantic-ui/semantic.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@import "_mixins";
+@import "./editor-style-block.css";
+@import "./wp.css";
+@import "./wp_blocs.css";
+
+
+body, html {
+    height: auto;
+}
+
+.fluid-container{
+	width: 95%;
+	display: block;
+	margin: 15px auto;
+}
+
+.ui.container{
+	width: 1315px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Montserrat',sans-serif;
+}
+
+p{
+	font-size: px-rem(16);
+}
+
+
+#shadow-menu{
+    //display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    z-index: -10; /* Stay on top */
+    opacity: 0;
+    transition: .2s;
+}
+
+
+.btn-default{
+	border: 1px solid #000;
+	padding: 9px 18px;
+	font-size: px-rem(16);
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	margin: 3vh 0;
+	display: inline-block;
+	color: #000;
+	&:hover{
+		color: darken(#000,10%);
+	}
+}
+
+
+
+
+
+
+///////////////////////
+// MINI FRAMEWORK FLEX
+
+
+
+
+
+
+// SIDEBAR
+
+#navSidebar{
+	z-index: 999999; /* Stay on top */
+	overflow-x: hidden; 
+	transition: .5s;
+	background-color: rgba(255, 123, 0, 0.89);
+
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	font-size: 22px;
+	left: -110%;
+	//box-shadow: -3px 0px 8px 2px rgba(0,0,0,0.3);
+	color:#fff;
+	font-weight: 30;
+	line-height: inherit;
+	//display: flex;
+	nav{
+		width: 100%;
+		padding-bottom: 45px;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		clear: both;
+		li{
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid #fff;
+			a{
+				display: block;
+				color: #fff;
+				font-size: px-rem(18);
+				font-weight: 600;
+				padding: 15px 0;
+				padding-left: 25px;
+				//margin: 2vh 0;
+				width: 100%;
+			}
+			.sub-menu{
+				display: none;
+				li{
+					padding-left: 15px;
+					border-left: 4px solid #fff;
+
+					a{
+						font-size: px-rem(14);
+					}
+				}
+			}
+			.closeMenu{
+				font-size: px-rem(30);
+			}
+		}
+	}
+	.btnCloseMenu{
+		margin: 0 auto;
+		display: block;
+		float: right;
+		background-color: transparent;
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+		border: 1px solid #fff;
+		margin: 5px;
+		clear: both;
+	}
+}
+
+ 
+//
+// HEADER
+//
+
+#header{
+	h1{
+		text-transform: uppercase;
+		font-size: px-rem(37);
+		text-align: center;
+		color: #a00404;
+	}
+	p{
+		text-align: justify;
+	}
+	margin-bottom: 20px;
+}
+
+#formConversion{
+	background-color: #f1f1f1;
+	padding: 15px;
+	border: 1px solid #b1b1b1;
+	p{
+		font-size: px-rem(11);
+		a{
+			border-bottom: 1px dotted #000;
+			&:hover{
+				color: inherit;
+			}
+		}
+	}
+}
+
+
+.imagem-bia{
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 13px 8px rgba(0,0,0, 0.1);
+	img{
+		display: block;
+	}
+}
+
+#infos{
+	padding: 5vh 0 0;
+	header{
+		background-color: #a00404;
+		padding: 3vh 0 10vh;
+		color: #f1f1f1;
+		h1{
+			font-weight: 500;
+			font-size: px-rem(32);
+			span{
+				font-weight: 700;
+				color: #fbbd08;
+			}
+		}
+	}
+	aside{
+		background-color: #fff;
+		padding-bottom: 6vh;
+		img{
+			margin-top: -6vh;
+			box-shadow: 0 -10px 25px -5px rgba(115,115,115,0.65);
+			margin-bottom: 5vh;
+		}
+		p{
+			text-align: justify;
+		}
+		.button{
+			margin-top: 5vh;
+		}
+	}
+}
+
+#sobre{
+	padding: 10vh 0;
+	background-color: #fff4e1;
+	h1{
+		color: #fbbd08;
+		text-shadow: 1px 1px 0px #000;
+	}
+	p{
+		color: #000;
+	}
+	.button{
+		margin-top: 5vh;
+	}
+}

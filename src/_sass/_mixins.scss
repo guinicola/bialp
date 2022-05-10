@@ -1,0 +1,68 @@
+// MIXINS USE @include mixin
+// PLACEHOLDER USE @extend %placeholder
+
+
+//
+// MIXINS AND FUNCIOTNS
+//
+
+@mixin input-placeholder {
+    //&.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+
+
+
+// CLEAFIX
+@mixin clearfix{
+	/*CLEARFIX*/
+	&::before {
+	    content:"";
+	    display:table;
+	}
+	&::after {
+		content:"";
+	    display:table;
+	    clear:both;
+	}
+	zoom:1; /* For IE 6/7 (trigger hasLayout) */
+	/*CLEARFIX*/
+}
+
+@mixin center($v: 5px) {
+	display: block;
+	margin: $v+px auto;
+}
+
+// BUTTON CIRCULAR ICON
+@mixin circular-btn-ico($bg : #000, $cl : #fff, $fz : 14px ) {
+    cursor: pointer;
+    background: $bg;
+    color: $cl;
+    font-size: $fz;
+    width: 2em;
+    height: 2em;
+    border-radius: 50px;
+    border: 0;
+}
+
+
+
+// PX TO REM
+@function px-rem($valor){
+  @return calc($valor / 16)+rem
+}
+
+
+//
+// PLACEHOLDERS
+//
+%list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

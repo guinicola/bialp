@@ -1,0 +1,20 @@
+{
+  "name": "landinpage_beatriz_faulin",
+  "version": "1.0.0",
+  "description": "Landing page para Bia Faulin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tribox by Gui Nicola",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {}
+}
