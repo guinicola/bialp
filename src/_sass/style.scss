@@ -357,4 +357,9 @@ p{
 	.button{
 		margin-top: 5vh;
 	}
+	.boxValue{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
 }
