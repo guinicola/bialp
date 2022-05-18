@@ -15,6 +15,11 @@
 </head>
 <body>
 
+    <script>
+        $(function () {
+            $('.ui.video').video();
+        });  
+    </script>
 
     <main>
 
@@ -62,7 +67,7 @@
                             </div>
 
                             <div class="field">
-                                <button type="submit" class="ui large teal fluid button">QUERO PARTICIPAR!</button>
+                                <button type="submit" class="ui large purple fluid button">QUERO PARTICIPAR!</button>
                             </div>
 
                             <div class="field">
@@ -97,9 +102,25 @@
             
             <header>
                 <div class="ui container">
-                    <h1 class="txtCt">
-                        <span>DESAFIO É EM FORMA DE GAME!</span> Tarefas diárias e premiação ao final! <span>Reeducação Alimentar e Emocional!</span> Este Desafio é muito <span>INTERATIVO</span>, mesmo <span>ONLINE</span> estaremos bem juntas!  
-                    </h1>
+                    <div class="ui two columns stackable centered grid">
+                        <div class="column">
+                            <h1 class="txtCt">
+                                <span>DESAFIO É EM FORMA DE GAME!</span>
+                                <br><br>
+                                Tarefas diárias e premiação ao final! 
+                                <br><br>
+                                <span>Reeducação Alimentar e Emocional!</span>
+                                <br><br>
+                                Este Desafio é muito <span>INTERATIVO</span>, mesmo <span>ONLINE</span> estaremos bem juntas!  
+                            </h1>
+                        </div>
+
+                        <div class="column">
+                            <video loop class="thevideo"  width="640" height="350" autoplay controls>
+                                <source src="./img/video-chamada.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
                 </div>
             </header>
                     
@@ -107,8 +128,6 @@
 
                 <div class="ui container">
     
-                    <img src='http://fakeimg.pl/1200x650?text=VÍDEO' alt=''/>
-
                     <h1 class="txtCt">ATENÇÃO:</h1>
                     
                     <div class="ui two columns stackable centered grid">
@@ -151,7 +170,7 @@
 
                     </div>
     
-                    <a href="#" class="ui large teal fluid button">QUERO GARANTIR MINHA VAGA</a>
+                    <a href="#" class="ui large purple fluid button">QUERO GARANTIR MINHA VAGA</a>
                 
                 </div>
 
@@ -164,48 +183,65 @@
         <section id="sobre">
             
             <div class="ui container">
-                
                 <div class="ui two columns stackable middle aligned grid">
                     
                     <div class="column">
 
-                        <h1 class="txtCtM">Beatriz Faulin
-                            <br>
-                            NUTRICIONISTA e PSICÓLOGA
-                            <br>
-                            AMIGOS DO PESO
-                        </h1>
-
                         <div class="boxValue">
+                            <h2 class="ui inverted big massive yellow header">Grupo Personalizado</h2>
                             <div class="ui inverted circular red segment">
                                 TUDO isso por APENAS
-                                <h2 class="ui inverted big massive yellow header">
+                                <h3 class="ui inverted big massive yellow header">
                                   R$ 159.00
-                                  <div class="sub header">desconto de R$ 50,00 <br> para pagamento até 00/00/0000</div>
-                                </h2>
+                                  <div class="sub header">
+                                    + desconto de R$ 50,00 <br>
+                                    para pagamento até<br>
+                                    00/00/0000</div>
+                                </h3>
                               </div>
-                        </div>
-
-                        <br>
-                        <p class="txtCt">
-                            <a class="ui green label" href="http://.beatrizfaulin.com.br" target="_blank"><i class="linkify icon"></i> www.beatrizfaulin.com.br</a>
-                        </p>
-
-                        <div class="social txtCt">
-                            <a href="https://api.whatsapp.com/send?=phone=5514981412293&text=EU QUERO PARTICICPAR DO DESAFIO EMAGRAÇA AGORA!!" target="_blank">
-                                <i class="circular whatsapp green inverted big icon"></i>
-                            </a>
                         </div>
 
                     </div>
                    
                     <div class="column">
-                        <img src='http://fakeimg.pl/800x650' alt=''/>
+                        <div class="boxValue">
+                            <h2 class="ui inverted big massive yellow header">VIP</h2>
+                            <div class="ui inverted circular red segment">
+                                TUDO isso por APENAS
+                                <h3 class="ui inverted big massive yellow header">
+                                  R$ 289.00
+                                  <div class="sub header">
+                                      Grupo personalizado + <br> 
+                                      2 Consultas individuais por vídeo<br>
+                                      chamada no WhatsApp</div>
+                                </h3>
+                              </div>
+                        </div>
                     </div>
 
                 </div>
 
-                <a href="#" class="ui large teal fluid button">QUERO GARANTIR MINHA VAGA</a>
+                <div class="ui divider"></div>
+
+                <h1 class="txtCtM">
+                    Beatriz Faulin
+                    <br>
+                    NUTRICIONISTA e PSICÓLOGA
+                    <br>
+                    AMIGOS DO PESO
+                </h1>
+
+                <p class="txtCt">
+                    <a class="ui green label" href="http://.beatrizfaulin.com.br" target="_blank"><i class="linkify icon"></i> www.beatrizfaulin.com.br</a>
+                </p>
+
+                <div class="social txtCt">
+                    <a href="https://api.whatsapp.com/send?=phone=5514981412293&text=EU QUERO PARTICICPAR DO DESAFIO EMAGRAÇA AGORA!!" target="_blank">
+                        <i class="circular whatsapp green inverted big icon"></i>
+                    </a>
+                </div>
+
+                <a href="#" class="ui large purple fluid button">QUERO GARANTIR MINHA VAGA</a>
 
 
             </div>

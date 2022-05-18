@@ -7,6 +7,12 @@
 * @Descrição: LandingPage Bia Faulin
 */
 
+$color1: #582770;
+$color2: #773d94;
+$color3: #943d8a;
+$color4: #c22760;
+$color5: #e81764;
+
 $container: 1260px;
 
 
@@ -31,11 +37,8 @@ html{
 
 body{
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e4f8f7+12,c0ebf1+71 */
-	background: #e4f8f7; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #e4f8f7 12%, #c0ebf1 71%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #e4f8f7 12%,#c0ebf1 71%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #e4f8f7 12%,#c0ebf1 71%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f8f7', endColorstr='#c0ebf1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: linear-gradient(90deg, rgba(88,39,112,0.30015756302521013) 0%, rgba(232,23,100,0.30015756302521013) 35%);
+
 	font-weight: 400;
 	color: #303030;
 	padding: 10vh 0 0; // viewport height
@@ -278,7 +281,7 @@ p{
 		text-transform: uppercase;
 		font-size: px-rem(37);
 		text-align: center;
-		color: #a00404;
+		color: $color5;
 	}
 	p{
 		text-align: justify;
@@ -315,28 +318,36 @@ p{
 #infos{
 	padding: 5vh 0 0;
 	header{
-		background-color: #a00404;
-		padding: 3vh 0 10vh;
+		background-color: #506fb7;
+		padding: 6vh 0;
 		color: #f1f1f1;
 		h1{
 			font-weight: 500;
-			font-size: px-rem(32);
+			font-size: px-rem(28);
 			span{
 				font-weight: 700;
-				color: #fbbd08;
+				color: #d4ca9e;
 			}
 		}
 	}
 	aside{
-		background-color: #fff;
-		padding-bottom: 6vh;
+		background: linear-gradient(90deg, rgba(88,39,112,0.30015756302521013) 0%, rgba(232,23,100,0.30015756302521013) 35%);
+		;
+		padding: 6vh 0;
 		img{
 			margin-top: -6vh;
 			box-shadow: 0 -10px 25px -5px rgba(115,115,115,0.65);
 			margin-bottom: 5vh;
 		}
+		h1{
+			text-transform: uppercase;
+			font-size: px-rem(37);
+			text-align: center;
+			color: $color5;
+		}
 		p{
 			text-align: justify;
+			color: #000;
 		}
 		.button{
 			margin-top: 5vh;
@@ -345,10 +356,16 @@ p{
 }
 
 #sobre{
-	padding: 10vh 0;
-	background-color: #fff4e1;
+	padding: 6vh 0;
+	background-color: #506fb7;
 	h1{
-		color: #fbbd08;
+		text-align: center;
+		color: #d4ca9e;
+		text-shadow: 1px 1px 0px #000;
+	}
+	h2{
+		text-align: center;
+		color: #d4ca9e;
 		text-shadow: 1px 1px 0px #000;
 	}
 	p{
@@ -359,7 +376,7 @@ p{
 	}
 	.boxValue{
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 	}
 }
